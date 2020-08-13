@@ -1,0 +1,22 @@
+{#
+/**
+ * @file socionics_type_entity.html.twig
+ * Default theme implementation to present Socionics type entity data.
+ *
+ * This template is used when viewing Socionics type entity pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_socionics_type_entity()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('socionics_type_entity') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

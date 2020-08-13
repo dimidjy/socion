@@ -1,0 +1,5 @@
+name: 'socion'
+type: module
+description: 'Module for the analysis of socionic types'
+core: 8.x
+package: 'Custom'

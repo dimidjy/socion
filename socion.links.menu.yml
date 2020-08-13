@@ -1,0 +1,17 @@
+
+# Socionics type entity menu items definition
+entity.socionics_type_entity.collection:
+  title: 'Socionics type entity list'
+  route_name: entity.socionics_type_entity.collection
+  description: 'List Socionics type entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Socionics type entity type menu items definition
+entity.socionics_type_entity_type.collection:
+  title: 'Socionics type entity type'
+  route_name: entity.socionics_type_entity_type.collection
+  description: 'List Socionics type entity type (bundles)'
+  parent: system.admin_structure
+  weight: 99

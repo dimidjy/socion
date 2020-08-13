@@ -1,0 +1,17 @@
+# Socionics type entity routing definition
+
+entity.socionics_type_entity.canonical:
+  route_name: entity.socionics_type_entity.canonical
+  base_route: entity.socionics_type_entity.canonical
+  title: 'View'
+
+entity.socionics_type_entity.edit_form:
+  route_name: entity.socionics_type_entity.edit_form
+  base_route: entity.socionics_type_entity.canonical
+  title: 'Edit'
+
+entity.socionics_type_entity.delete_form:
+  route_name:  entity.socionics_type_entity.delete_form
+  base_route:  entity.socionics_type_entity.canonical
+  title: Delete
+  weight: 10

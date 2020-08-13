@@ -1,0 +1,10 @@
+entity.socionics_type_entity.add_form:
+  route_name: entity.socionics_type_entity.add_page
+  title: 'Add Socionics type entity'
+  appears_on:
+    - entity.socionics_type_entity.collection
+entity.socionics_type_entity_type.add_form:
+  route_name: entity.socionics_type_entity_type.add_form
+  title: 'Add Socionics type entity type'
+  appears_on:
+    - entity.socionics_type_entity_type.collection

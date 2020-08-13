@@ -1,0 +1,20 @@
+add socionics type entity entities:
+  title: 'Create new Socionics type entity entities'
+
+administer socionics type entity entities:
+  title: 'Administer Socionics type entity entities'
+  description: 'Allow to access the administration form to configure Socionics type entity entities.'
+  restrict access: true
+
+delete socionics type entity entities:
+  title: 'Delete Socionics type entity entities'
+
+edit socionics type entity entities:
+  title: 'Edit Socionics type entity entities'
+
+view published socionics type entity entities:
+  title: 'View published Socionics type entity entities'
+
+view unpublished socionics type entity entities:
+  title: 'View unpublished Socionics type entity entities'
+
