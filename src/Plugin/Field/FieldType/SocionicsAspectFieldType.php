@@ -39,8 +39,8 @@ class SocionicsAspectFieldType extends NumericItemBase {
    */
   public static function defaultFieldSettings() {
     return [
-        'min' => '-100',
-        'max' => '100',
+        'min' => '-10',
+        'max' => '10',
         'prefix' => '',
         'suffix' => '',
       ] + parent::defaultFieldSettings();
@@ -74,26 +74,6 @@ class SocionicsAspectFieldType extends NumericItemBase {
         ],
       ],
     ];
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function storageSettingsForm(array &$form, FormStateInterface $form_state, $has_data) {
-    $elements = [];
-
-    $elements['max_length'] = [
-      '#type' => 'number',
-      '#title' => t('Maximum length'),
-      '#default_value' => $this->getSetting('max_length'),
-      '#required' => TRUE,
-      '#description' => t('The maximum length of the field in characters.'),
-      '#min' => -100,
-      '#max' => 100,
-      '#disabled' => $has_data,
-    ];
-
-    return $elements;
   }
 
   /**

@@ -1,0 +1,8 @@
+
+socion.socion_controller_show:
+  path: '/socion/show'
+  defaults:
+    _controller: '\Drupal\socion\Controller\SocionController::show'
+    _title: 'Show'
+  requirements:
+    _permission: 'access content'

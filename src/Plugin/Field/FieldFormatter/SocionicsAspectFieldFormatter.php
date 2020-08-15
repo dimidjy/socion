@@ -68,9 +68,8 @@ class SocionicsAspectFieldFormatter extends FormatterBase {
       $element[$delta] = [
         '#type' => 'markup',
         '#markup' => new FormattableMarkup(
-          '<div><p>@value</p></div><div><p>@addidtional_text</p></div>',
+          '<div><p>@value</p></div>',
           [
-            '@addidtional_aspect' => $settings['addidtional_text'],
             '@value' => $value,
           ]
         ),
