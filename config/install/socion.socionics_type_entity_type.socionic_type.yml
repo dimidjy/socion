@@ -1,0 +1,5 @@
+langcode: en
+status: true
+dependencies: {  }
+id: socionic_type
+label: 'Socionic type'

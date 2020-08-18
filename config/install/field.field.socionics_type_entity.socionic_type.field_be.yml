@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.socionics_type_entity.field_be
+    - socion.socionics_type_entity_type.socionic_type
+  module:
+    - socion
+id: socionics_type_entity.socionic_type.field_be
+field_name: field_be
+entity_type: socionics_type_entity
+bundle: socionic_type
+label: BE
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings:
+  min: '-10'
+  max: '10'
+  prefix: ''
+  suffix: ''
+field_type: socionics_aspect_field_type

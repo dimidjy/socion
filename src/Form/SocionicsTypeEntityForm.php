@@ -52,7 +52,7 @@ class SocionicsTypeEntityForm extends ContentEntityForm {
         'datasets' => [
           [
             'label' => 'Sociotypes',
-            'data' => [12,12,12,180, 12,12,12,12,12,12,12,21,21,12,12,12],
+            'data' => [0.1,0.1,0.1,0.1, 0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1],
             'backgroundColor' => ['#00557f', '#00557f', '#00557f'],
             'hoverBackgroundColor' => ['#004060', '#004060', '#004060'],
           ]
@@ -92,7 +92,7 @@ class SocionicsTypeEntityForm extends ContentEntityForm {
     foreach ($form as $key => &$form_element ){
 
       if(substr( $key , 0 , strlen("field_")) == "field_"){
-        $form["$key"]["#attributes"]["id"][] = "aspect-".$i;
+        $form[$key]["#attributes"]["id"][] = "aspect-".$i;
         $i++;
       }
     }

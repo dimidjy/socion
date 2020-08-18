@@ -1,8 +1,16 @@
-
 socion.socion_controller_show:
   path: '/socion/show'
   defaults:
     _controller: '\Drupal\socion\Controller\SocionController::show'
     _title: 'Show'
+  requirements:
+    _permission: 'access content'
+
+socion.sociotypes_data_controller_get_data:
+  path: '/socion/sociotypes_data.json'
+  defaults:
+    _controller: '\Drupal\socion\Controller\SociotypesDataController::renderApi'
+    _title: 'getResults'
+  methods:  [GET]
   requirements:
     _permission: 'access content'

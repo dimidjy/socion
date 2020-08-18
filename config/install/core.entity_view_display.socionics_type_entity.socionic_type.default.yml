@@ -1,0 +1,137 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.socionics_type_entity.socionic_type.field_bd
+    - field.field.socionics_type_entity.socionic_type.field_be
+    - field.field.socionics_type_entity.socionic_type.field_bi
+    - field.field.socionics_type_entity.socionic_type.field_bk
+    - field.field.socionics_type_entity.socionic_type.field_bl
+    - field.field.socionics_type_entity.socionic_type.field_bs
+    - field.field.socionics_type_entity.socionic_type.field_cd
+    - field.field.socionics_type_entity.socionic_type.field_ce
+    - field.field.socionics_type_entity.socionic_type.field_ci
+    - field.field.socionics_type_entity.socionic_type.field_ck
+    - field.field.socionics_type_entity.socionic_type.field_cl
+    - field.field.socionics_type_entity.socionic_type.field_cs
+    - socion.socionics_type_entity_type.socionic_type
+  module:
+    - socion
+    - user
+id: socionics_type_entity.socionic_type.default
+targetEntityType: socionics_type_entity
+bundle: socionic_type
+mode: default
+content:
+  field_bd:
+    weight: 9
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_be:
+    weight: 5
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_bi:
+    weight: 3
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_bk:
+    weight: 12
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_bl:
+    weight: 1
+    label: above
+    settings:
+      addidtional_aspect: 0
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_bs:
+    weight: 7
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_cd:
+    weight: 10
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_ce:
+    weight: 6
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_ci:
+    weight: 4
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_ck:
+    weight: 11
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_cl:
+    weight: 2
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_cs:
+    weight: 8
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

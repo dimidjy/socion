@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.socionics_type_entity.field_cl
+    - socion.socionics_type_entity_type.socionic_type
+  module:
+    - socion
+id: socionics_type_entity.socionic_type.field_cl
+field_name: field_cl
+entity_type: socionics_type_entity
+bundle: socionic_type
+label: CL
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '-3'
+default_value_callback: ''
+settings:
+  min: '-10'
+  max: '10'
+  prefix: ''
+  suffix: ''
+field_type: socionics_aspect_field_type

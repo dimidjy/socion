@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - socion
+id: socionics_type_entity.field_bi
+field_name: field_bi
+entity_type: socionics_type_entity
+type: socionics_aspect_field_type
+settings:
+  unsigned: false
+  size: big
+module: socion
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
