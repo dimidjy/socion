@@ -38,6 +38,7 @@ class SocionicsTypeEntityForm extends ContentEntityForm {
   public function buildForm(array $form, FormStateInterface $form_state) {
     /* @var \Drupal\socion\Entity\SocionicsTypeEntity $entity */
 
+    $form['#theme'] = 'socion_form';
     $form['#attached']['library'][] = 'socion/socion_chart';
     $form['#attached']['library'][] = 'socion/socion_chart_plugin';
 
@@ -60,7 +61,9 @@ class SocionicsTypeEntityForm extends ContentEntityForm {
       ],
     ];
     $form = parent::buildForm($form, $form_state);
+
     $this->getAspectsFields($form);
+
     return $form;
   }
 

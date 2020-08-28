@@ -14,121 +14,141 @@ dependencies:
     - field.field.socionics_type_entity.socionic_type.field_ck
     - field.field.socionics_type_entity.socionic_type.field_cl
     - field.field.socionics_type_entity.socionic_type.field_cs
+    - field.field.socionics_type_entity.socionic_type.field_em
+    - field.field.socionics_type_entity.socionic_type.field_et
+    - field.field.socionics_type_entity.socionic_type.field_ex
+    - field.field.socionics_type_entity.socionic_type.field_in
+    - field.field.socionics_type_entity.socionic_type.field_ir
     - socion.socionics_type_entity_type.socionic_type
   module:
     - socion
+    - text
 id: socionics_type_entity.socionic_type.default
 targetEntityType: socionics_type_entity
 bundle: socionic_type
 mode: default
 content:
   field_bd:
-    weight: 14
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 10
+    settings: {  }
     third_party_settings: {  }
     type: socionics_aspect_field_widget
     region: content
   field_be:
-    weight: 10
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 7
+    settings: {  }
     third_party_settings: {  }
     type: socionics_aspect_field_widget
     region: content
   field_bi:
-    weight: 8
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 3
+    settings: {  }
     third_party_settings: {  }
     type: socionics_aspect_field_widget
     region: content
   field_bk:
-    weight: 17
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 9
+    settings: {  }
     third_party_settings: {  }
     type: socionics_aspect_field_widget
     region: content
   field_bl:
-    weight: 6
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 11
+    settings: {  }
     third_party_settings: {  }
     type: socionics_aspect_field_widget
     region: content
   field_bs:
-    weight: 12
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 8
+    settings: {  }
     third_party_settings: {  }
     type: socionics_aspect_field_widget
     region: content
   field_cd:
-    weight: 15
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 5
+    settings: {  }
     third_party_settings: {  }
     type: socionics_aspect_field_widget
     region: content
   field_ce:
-    weight: 11
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 6
+    settings: {  }
     third_party_settings: {  }
     type: socionics_aspect_field_widget
     region: content
   field_ci:
-    weight: 9
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 4
+    settings: {  }
     third_party_settings: {  }
     type: socionics_aspect_field_widget
     region: content
   field_ck:
-    weight: 16
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 14
+    settings: {  }
     third_party_settings: {  }
     type: socionics_aspect_field_widget
     region: content
   field_cl:
-    weight: 7
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 12
+    settings: {  }
     third_party_settings: {  }
     type: socionics_aspect_field_widget
     region: content
   field_cs:
     weight: 13
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
+    third_party_settings: {  }
+    type: socionics_aspect_field_widget
+    region: content
+  field_em:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: socionics_aspect_field_widget
+    region: content
+  field_et:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: socionics_aspect_field_widget
+    region: content
+  field_ex:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: socionics_aspect_field_widget
+    region: content
+  field_in:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: socionics_aspect_field_widget
+    region: content
+  field_ir:
+    weight: 17
+    settings: {  }
     third_party_settings: {  }
     type: socionics_aspect_field_widget
     region: content
   name:
     type: string_textfield
-    weight: -4
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  type_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
   user_id:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60

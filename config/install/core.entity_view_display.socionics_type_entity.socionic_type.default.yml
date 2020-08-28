@@ -14,9 +14,15 @@ dependencies:
     - field.field.socionics_type_entity.socionic_type.field_ck
     - field.field.socionics_type_entity.socionic_type.field_cl
     - field.field.socionics_type_entity.socionic_type.field_cs
+    - field.field.socionics_type_entity.socionic_type.field_em
+    - field.field.socionics_type_entity.socionic_type.field_et
+    - field.field.socionics_type_entity.socionic_type.field_ex
+    - field.field.socionics_type_entity.socionic_type.field_in
+    - field.field.socionics_type_entity.socionic_type.field_ir
     - socion.socionics_type_entity_type.socionic_type
   module:
     - socion
+    - text
     - user
 id: socionics_type_entity.socionic_type.default
 targetEntityType: socionics_type_entity
@@ -119,6 +125,46 @@ content:
     third_party_settings: {  }
     type: socionics_aspect_field_formatter
     region: content
+  field_em:
+    weight: 13
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_et:
+    weight: 17
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_ex:
+    weight: 14
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_in:
+    weight: 16
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
+  field_ir:
+    weight: 15
+    label: above
+    settings:
+      addidtional_aspect: false
+    third_party_settings: {  }
+    type: socionics_aspect_field_formatter
+    region: content
   name:
     label: above
     type: string
@@ -126,6 +172,13 @@ content:
     region: content
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+  type_description:
+    label: above
+    type: text_default
+    weight: -4
+    region: content
+    settings: {  }
     third_party_settings: {  }
   user_id:
     label: hidden

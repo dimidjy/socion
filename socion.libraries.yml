@@ -3,3 +3,16 @@ socion_chart_plugin:
     js/socion_chart_plugin.js: {}
   dependencies:
     - chartjs_api/chartjs
+
+bootstrap_cdn:
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js: {}
+    //stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js: {}
+  css:
+    component:
+      //stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css: {}
+socion_form:
+  version: VERSION
+  css:
+    component:
+      css/style.css: {}

@@ -167,6 +167,8 @@ class SocionicsTypeEntity extends ContentEntityBase implements SocionicsTypeEnti
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
+
+
     $fields['name'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Name'))
       ->setDescription(t('The name of the Socionics type entity entity.'))
@@ -201,6 +203,30 @@ class SocionicsTypeEntity extends ContentEntityBase implements SocionicsTypeEnti
     $fields['changed'] = BaseFieldDefinition::create('changed')
       ->setLabel(t('Changed'))
       ->setDescription(t('The time that the entity was last edited.'));
+
+    $fields['type_description'] = BaseFieldDefinition::create('text_long')
+      ->setLabel(t('Type description.'))
+      ->setDescription(t('Type description.'))
+      ->setDisplayOptions('view', [
+        'label' => 'above',
+        'type' => 'string',
+        'weight' => -4,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'string_textfield',
+        'weight' => -4,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE)
+      ->setRequired(TRUE);
+
+    $fields['avatar'] = BaseFieldDefinition::create('image')
+      ->setLabel(t('Image'))
+      ->setDescription(t('The avatar image.'))
+      ->setDisplayOptions('form', array(
+        'type' => 'image_image',
+        'weight' => 5,
+      ));
 
     return $fields;
   }

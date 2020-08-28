@@ -37,6 +37,9 @@ function socion_theme() {
     'file' => 'socionics_type_entity.page.inc',
     'template' => 'socionics_type_entity',
   ];
+  $theme['socion_form'] = [
+    'render element' => 'form'
+  ];
   $theme['socionics_type_entity_content_add_list'] = [
     'render element' => 'content',
     'variables' => ['content' => NULL],
